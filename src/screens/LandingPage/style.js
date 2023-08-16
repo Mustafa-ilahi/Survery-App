@@ -62,4 +62,6 @@ export const styles = StyleSheet.create({
   btnBottom: {
     marginBottom: sizes.screenHeight * 0.02,
   },
+  container: {height: sizes.screenHeight, backgroundColor: colors.white},
+
 });

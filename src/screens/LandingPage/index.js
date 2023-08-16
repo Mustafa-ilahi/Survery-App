@@ -7,6 +7,8 @@ import images from '../../services/utilities/images';
 export default function LandingPage() {
   return (
     <SafeAreaView>
+      <View style={styles.container}>
+
       <View>
         <CrossBtn />
       </View>
@@ -51,6 +53,8 @@ export default function LandingPage() {
           </View>
         </TouchableOpacity>
       </View>
+      </View>
+
     </SafeAreaView>
   );
 }

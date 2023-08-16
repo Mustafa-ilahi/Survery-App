@@ -33,4 +33,5 @@ export const styles = StyleSheet.create({
     // borderTopLeftRadius: sizes.screenWidth * 0.03,
     // borderColor: colors.grayBorder,
   },
+  container: {height: sizes.screenHeight, backgroundColor: colors.white},
 });
