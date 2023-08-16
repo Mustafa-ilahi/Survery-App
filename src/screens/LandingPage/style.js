@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
     width: sizes.screenWidth * 0.85,
     alignSelf: 'center',
     padding: sizes.screenHeight * 0.015,
-    borderColor: '#EFEFF0',
+    borderColor: colors.borderColor,
     borderRadius: sizes.screenWidth * 0.015,
     flexDirection: 'row',
     alignItems: 'center',

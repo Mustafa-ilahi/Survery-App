@@ -26,7 +26,7 @@ export const colors = {
   secondary: '#1877F2',
   primary: '#161616',
   link: '#0000EE',
-  grayBorder: '#a3a3a3',
+  grayBorder: '#AFB1B6',
   disabledBg2: '#90949d',
   lightGray2: '#c1c1c1',
   disabledIcon: '#bcc3cb',
