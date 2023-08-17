@@ -5,39 +5,88 @@ export const styles = StyleSheet.create({
   container: {
     height: sizes.screenHeight,
     backgroundColor: colors.white,
-    // alignItems: 'center',
-    // justifyContent: 'center',
+    paddingHorizontal: sizes.screenWidth * 0.03,
   },
-  header:{
-    flexDirection:"row",
-    alignItems:"center",
-    justifyContent:"space-between",
-    paddingHorizontal:sizes.screenWidth * 0.03,
-    marginTop:sizes.screenHeight * 0.02
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginTop: sizes.screenHeight * 0.02,
   },
   arrowImg: {
     height: sizes.screenHeight * 0.02,
     width: sizes.screenWidth * 0.03,
   },
-  arrowText:{
-    fontWeight:"bold",
-    fontSize:fontSize.h6
+  arrowText: {
+    fontWeight: 'bold',
+    fontSize: fontSize.h6,
+    color: colors.gray,
   },
-  Text2:{
-    color:colors.appTextColor1
+  Text2: {
+    color: colors.appTextColor1,
   },
-  progressBarView:{
-    // backgroundColor:"red",
-    // width:200,
-    // height:20,
-    // marginLeft:10,
-    // alignItems:"center",
-    // justifyContent:"center"
-    // width:20
+  progressBarView: {
+    marginTop: sizes.screenHeight * 0.02,
   },
-  progressBarImg:{
-    // width:180
-    // marginLeft:150
-    width:sizes.screenWidth*0.09
-  }
+  progressBarImg: {
+    width: sizes.screenWidth,
+    right: sizes.screenWidth * 0.02,
+  },
+  questionView: {
+    width: sizes.screenWidth * 0.65,
+    marginTop: sizes.screenHeight * 0.05,
+  },
+  questionText: {
+    color: colors.black,
+    fontWeight: 'bold',
+    fontSize: fontSize.h3,
+  },
+  bottomView: {
+    flex: 1,
+    justifyContent: 'space-between',
+  },
+  optionView: {
+    height: sizes.screenHeight * 0.08,
+    backgroundColor: colors.white,
+    borderColor: colors.disabledBg,
+    borderStyle: 'solid',
+    borderWidth: 1,
+    borderRadius: 10,
+    marginTop: sizes.screenWidth * 0.05,
+    justifyContent: 'center',
+    paddingLeft: sizes.screenWidth * 0.05,
+  },
+  optionViewFocused: {
+    height: sizes.screenHeight * 0.08,
+    backgroundColor: colors.white,
+    borderColor: colors.appTextColor1,
+    borderStyle: 'solid',
+    borderWidth: 2,
+    borderRadius: 10,
+    marginTop: sizes.screenWidth * 0.05,
+    justifyContent: 'center',
+    paddingLeft: sizes.screenWidth * 0.05,
+  },
+  optionText: {
+    color: colors.black,
+    fontSize: fontSize.h6,
+  },
+  optionTextFocused: {
+    color: colors.appTextColor1,
+    fontSize: fontSize.h6,
+    fontWeight: 'bold',
+  },
+
+  inputTop: {
+    marginBottom: sizes.screenHeight * 0.03,
+  },
+  signInBtn: {
+    height: sizes.screenHeight * 0.083,
+  },
+  btnText: {
+    textAlign: 'center',
+    marginTop: sizes.screenHeight * 0.023,
+    color: '#EFEFF0',
+    fontSize: fontSize.extraLarge,
+  },
 });

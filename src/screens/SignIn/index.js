@@ -1,11 +1,18 @@
 import React, {useState} from 'react';
-import {SafeAreaView, View, Text, TouchableOpacity, Image} from 'react-native';
+import {
+  SafeAreaView,
+  View,
+  Text,
+  TouchableOpacity,
+  Image,
+  ImageBackground,
+} from 'react-native';
 import {styles} from './style';
 import CrossBtn from '../../components/CrossBtn';
 import images from '../../services/utilities/images';
 import {TextInput} from 'react-native-paper';
 import {colors, sizes} from '../../services';
-// AntDesign
+import Feather from 'react-native-vector-icons/Feather';
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
@@ -37,9 +44,10 @@ export default function SignIn() {
             activeUnderlineColor={colors.black}
             underlineColor="transparent"
             activeOutlineColor={colors.appTextColor1}
+            contentStyle={{color: colors.black}}
           />
         </View>
-        <View style={styles.inputTop}>
+        <View>
           <TextInput
             label="Password"
             value={password}
@@ -50,13 +58,40 @@ export default function SignIn() {
             underlineColor="transparent"
             activeOutlineColor={colors.appTextColor1}
             secureTextEntry={hidePass ? true : false}
-            right={
-              <TextInput.Icon
-                name="eye"
-                onPress={() => setHidePass(!hidePass)}
-              />
-            }
+            contentStyle={{color: colors.black}}
           />
+          <TouchableOpacity onPress={() => setHidePass(!hidePass)}>
+            <Feather
+              name={!hidePass ? 'eye' : 'eye-off'}
+              color={colors.disabledBg2}
+              size={20}
+              style={{
+                bottom: sizes.screenHeight * 0.045,
+                alignSelf: 'flex-end',
+                right: sizes.screenWidth * 0.08,
+              }}
+            />
+          </TouchableOpacity>
+        </View>
+        <View style={styles.inputTop}>
+          <TouchableOpacity>
+            <ImageBackground source={images.buttonBg} style={styles.signInBtn}>
+              <Text style={styles.btnText}>Sign In</Text>
+            </ImageBackground>
+          </TouchableOpacity>
+        </View>
+        <View>
+          <TouchableOpacity>
+            <View style={styles.forgetView}>
+              <Text style={styles.forgetText}>Forgot Password?</Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+        <View style={[styles.row, styles.bottom]}>
+          <Text style={styles.forgetText}>Don’t have an account?</Text>
+          <TouchableOpacity>
+            <Text style={styles.signUpText}>Sign Up Today!</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </SafeAreaView>

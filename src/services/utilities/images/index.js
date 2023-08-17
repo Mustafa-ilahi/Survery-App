@@ -6,7 +6,9 @@ import google from '../../../assets/google.png';
 import rightArrow from '../../../assets/rightArrow.png';
 import leftArrow from '../../../assets/leftArrow.png';
 import progressBar from '../../../assets/progressBar.png';
+import buttonBg2 from '../../../assets/buttonBg2.png';
 
+import buttonBg from '../../../assets/buttonBg.png';
 const images = {
   crossIcon,
   profile,
@@ -15,6 +17,8 @@ const images = {
   google,
   rightArrow,
   leftArrow,
-  progressBar
+  progressBar,
+  buttonBg,
+  buttonBg2
 };
 export default images;
