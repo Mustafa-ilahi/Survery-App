@@ -21,14 +21,14 @@ export const styles = StyleSheet.create({
   },
   gridItem: {
     backgroundColor: colors.grid,
-    height: sizes.screenWidth * 0.27,
-    width: sizes.screenWidth * 0.27,
+    height: sizes.screenWidth * 0.13,
+    width: sizes.screenWidth * 0.13,
     marginRight: sizes.screenWidth * 0.02,
     marginBottom: sizes.screenWidth * 0.02,
   },
   gridItemblue: {
-    height: sizes.screenWidth * 0.27,
-    width: sizes.screenWidth * 0.27,
+    height: sizes.screenWidth * 0.13,
+    width: sizes.screenWidth * 0.13,
     marginRight: sizes.screenWidth * 0.02,
     marginBottom: sizes.screenWidth * 0.02,
   },

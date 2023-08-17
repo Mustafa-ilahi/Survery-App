@@ -11,7 +11,7 @@ import {
 import images from '../../services/utilities/images';
 import Modal from 'react-native-modal';
 
-export default function GridGame() {
+export default function GridGame6x6() {
   const [isModalVisible, setModalVisible] = useState(false);
 
   const toggleModal = () => {
@@ -34,12 +34,69 @@ export default function GridGame() {
             <TouchableOpacity>
               <View style={styles.gridItem}></View>
             </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
           </View>
           <View style={styles.gridView}>
             <TouchableOpacity>
               <View style={styles.gridItem}></View>
             </TouchableOpacity>
-            <TouchableOpacity onPress={toggleModal}>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.gridView}>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.gridView}>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity 
+            // onPress={toggleModal}
+            >
               <ImageBackground
                 source={images.gridBg}
                 style={styles.gridItemblue}></ImageBackground>
@@ -47,8 +104,40 @@ export default function GridGame() {
             <TouchableOpacity>
               <View style={styles.gridItem}></View>
             </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
           </View>
           <View style={styles.gridView}>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.gridView}>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <View style={styles.gridItem}></View>
+            </TouchableOpacity>
             <TouchableOpacity>
               <View style={styles.gridItem}></View>
             </TouchableOpacity>
@@ -118,7 +207,9 @@ export default function GridGame() {
               <ImageBackground
                 source={images.buttonBg2}
                 style={styles.signInBtnModal}>
-                <Text style={styles.btnTextModal}>Buy Points (1000 in $9.99)</Text>
+                <Text style={styles.btnTextModal}>
+                  Buy Points (1000 in $9.99)
+                </Text>
               </ImageBackground>
             </TouchableOpacity>
           </View>

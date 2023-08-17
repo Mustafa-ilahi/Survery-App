@@ -21,6 +21,9 @@ import homePolls2 from '../../../assets/homePolls2.png';
 import homePolls3 from '../../../assets/homePolls3.png';
 import homePolls4 from '../../../assets/homePolls4.png';
 import homePolls5 from '../../../assets/homePolls5.png';
+import emoji from '../../../assets/emoji.png';
+import treeLight from '../../../assets/treeLight.png';
+import modalTree from '../../../assets/modalTree.png';
 
 const images = {
   crossIcon,
@@ -47,5 +50,8 @@ const images = {
   homePolls3,
   homePolls4,
   homePolls5,
+  emoji,
+  treeLight,
+  modalTree
 };
 export default images;

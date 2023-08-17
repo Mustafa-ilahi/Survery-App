@@ -7,16 +7,19 @@ import {
   TouchableOpacity,
   ImageBackground,
   Image,
+  Button,
 } from 'react-native';
 import images from '../../services/utilities/images';
+import {colors, sizes} from '../../services';
 import Modal from 'react-native-modal';
 
-export default function GridGame() {
+export default function GridGameResult() {
   const [isModalVisible, setModalVisible] = useState(false);
 
   const toggleModal = () => {
     setModalVisible(!isModalVisible);
   };
+
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -26,37 +29,64 @@ export default function GridGame() {
         <View style={styles.gridMain}>
           <View style={styles.gridView}>
             <TouchableOpacity>
-              <View style={styles.gridItem}></View>
+              <View style={styles.gridItem}>
+                <Image
+                  source={images.playstation}
+                  style={styles.stationResult}
+                />
+              </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.gridItem}></View>
+              <View style={styles.gridItem}>
+                <Image source={images.emoji} style={styles.emojiImg} />
+              </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.gridItem}></View>
+              <View style={styles.gridItem}>
+                <Image source={images.coin} style={styles.stationResult} />
+              </View>
             </TouchableOpacity>
           </View>
           <View style={styles.gridView}>
             <TouchableOpacity>
-              <View style={styles.gridItem}></View>
+              <View style={styles.gridItem}>
+                <Image source={images.coin} style={styles.stationResult} />
+              </View>
             </TouchableOpacity>
             <TouchableOpacity onPress={toggleModal}>
               <ImageBackground
                 source={images.gridBg}
-                style={styles.gridItemblue}></ImageBackground>
+                style={styles.gridItemblue}>
+                <View
+                  style={{alignSelf: 'center', top: sizes.screenHeight * 0.03}}>
+                  <Image source={images.treeLight} style={styles.lightTree} />
+                </View>
+              </ImageBackground>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.gridItem}></View>
+              <View style={styles.gridItem}>
+                <Image
+                  source={images.playstation}
+                  style={styles.stationResult}
+                />
+              </View>
             </TouchableOpacity>
           </View>
           <View style={styles.gridView}>
             <TouchableOpacity>
-              <View style={styles.gridItem}></View>
+              <View style={styles.gridItem}>
+                <Image source={images.emoji} style={styles.emojiImg} />
+              </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.gridItem}></View>
+              <View style={styles.gridItem}>
+                <Image source={images.coin} style={styles.stationResult} />
+              </View>
             </TouchableOpacity>
             <TouchableOpacity>
-              <View style={styles.gridItem}></View>
+              <View style={styles.gridItem}>
+                <Image source={images.emoji} style={styles.emojiImg} />
+              </View>
             </TouchableOpacity>
           </View>
         </View>
@@ -100,7 +130,7 @@ export default function GridGame() {
           </View>
         </View>
         <View style={styles.inputTop}>
-          <TouchableOpacity>
+          <TouchableOpacity >
             <ImageBackground source={images.buttonBg2} style={styles.signInBtn}>
               <Text style={styles.btnText}>Play (Cost 50 Points)</Text>
             </ImageBackground>
@@ -108,20 +138,22 @@ export default function GridGame() {
         </View>
       </View>
       <Modal isVisible={isModalVisible}>
-        <View style={styles.modalView}>
-          <Text style={styles.modalHead}>Out Of Points </Text>
-          <Text style={styles.modelText}>
-            Don’t have enough points? You can buy more!
+        <View
+          style={styles.modalView}>
+          <Image
+            onPress={toggleModal}
+            source={images.modalTree}
+            style={styles.modalTree}
+          />
+          <Text onPress={toggleModal} style={styles.modalHead}>
+            Congrats!
           </Text>
-          <View style={styles.modalBtnTop}>
-            <TouchableOpacity onPress={toggleModal}>
-              <ImageBackground
-                source={images.buttonBg2}
-                style={styles.signInBtnModal}>
-                <Text style={styles.btnTextModal}>Buy Points (1000 in $9.99)</Text>
-              </ImageBackground>
-            </TouchableOpacity>
-          </View>
+          <Text onPress={toggleModal} style={styles.modelText}>
+            {' '}
+            You just planted a tree in{' '}
+            <Text style={styles.blueText}>America</Text>
+          </Text>
+
         </View>
       </Modal>
     </SafeAreaView>

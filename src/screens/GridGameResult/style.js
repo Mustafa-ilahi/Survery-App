@@ -25,6 +25,8 @@ export const styles = StyleSheet.create({
     width: sizes.screenWidth * 0.27,
     marginRight: sizes.screenWidth * 0.02,
     marginBottom: sizes.screenWidth * 0.02,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   gridItemblue: {
     height: sizes.screenWidth * 0.27,
@@ -94,6 +96,18 @@ export const styles = StyleSheet.create({
   inputTop: {
     marginTop: sizes.screenHeight * 0.04,
   },
+  stationResult: {
+    height: sizes.screenHeight * 0.05,
+    width: sizes.screenWidth * 0.13,
+  },
+  emojiImg: {
+    height: sizes.screenHeight * 0.07,
+    width: sizes.screenWidth * 0.13,
+  },
+  lightTree: {
+    height: sizes.screenHeight * 0.075,
+    width: sizes.screenWidth * 0.13,
+  },
   modalView: {
     backgroundColor: colors.white,
     height: sizes.screenHeight * 0.4,
@@ -103,33 +117,23 @@ export const styles = StyleSheet.create({
     borderRadius: sizes.screenWidth * 0.06,
     justifyContent: 'center',
   },
-
+  modalTree: {
+    height: sizes.screenHeight * 0.1,
+    width: sizes.screenWidth * 0.2,
+  },
   modalHead: {
     fontSize: fontSize.h3,
     color: colors.black,
     fontWeight: 'bold',
   },
   modelText: {
-    fontSize: fontSize.h6,
+    fontSize: fontSize.h5,
     textAlign: 'center',
     color: colors.black,
-    width: sizes.screenWidth * 0.7,
+    width: sizes.screenWidth * 0.5,
     fontWeight: '500',
   },
   blueText: {
     color: colors.appTextColor1,
-  },
-  signInBtnModal: {
-    height: sizes.screenHeight * 0.059,
-    width: sizes.screenWidth * 0.63,
-    alignSelf: 'center',
-    justifyContent: 'center',
-    marginTop: 20,
-  },
-  btnTextModal: {
-    textAlign: 'center',
-    color: '#EFEFF0',
-    fontSize: fontSize.large,
-    fontWeight: '500',
   },
 });
