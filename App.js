@@ -11,6 +11,7 @@ import {SafeAreaProvider} from 'react-native-safe-area-context';
 import OTP from './src/screens/OTP';
 import GridGame from './src/screens/GridGame';
 import GridGameResult from './src/screens/GridGameResult';
+import GridGame6x6 from './src/screens/GridGame6x6';
 
 export default function App() {
   return (
@@ -22,8 +23,9 @@ export default function App() {
       {/* <Home/> */}
       {/* <SignUp /> */}
       {/* <OTP /> */}
-      <GridGame />
+      {/* <GridGame /> */}
       {/* <GridGameResult /> */}
+      <GridGame6x6 />
     </SafeAreaProvider>
   );
 }
