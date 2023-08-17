@@ -22,8 +22,8 @@ export default function App() {
       {/* <Home/> */}
       {/* <SignUp /> */}
       {/* <OTP /> */}
-      {/* <GridGame /> */}
-      <GridGameResult />
+      <GridGame />
+      {/* <GridGameResult /> */}
     </SafeAreaProvider>
   );
 }

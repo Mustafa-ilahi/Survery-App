@@ -79,11 +79,11 @@ export const styles = StyleSheet.create({
   playView: {
     left: 3,
   },
- 
+
   signInBtn: {
     height: sizes.screenHeight * 0.083,
-    width:sizes.screenWidth*0.95,
-    alignSelf:'center'
+    width: sizes.screenWidth * 0.95,
+    alignSelf: 'center',
   },
   btnText: {
     textAlign: 'center',
@@ -91,7 +91,45 @@ export const styles = StyleSheet.create({
     color: '#EFEFF0',
     fontSize: fontSize.extraLarge,
   },
-  inputTop:{
-    marginTop:sizes.screenHeight*0.04
-  }
+  inputTop: {
+    marginTop: sizes.screenHeight * 0.04,
+  },
+  modalView: {
+    backgroundColor: colors.white,
+    height: sizes.screenHeight * 0.4,
+    width: sizes.screenWidth * 0.8,
+    alignItems: 'center',
+    alignSelf: 'center',
+    borderRadius: sizes.screenWidth * 0.06,
+    justifyContent: 'center',
+  },
+
+  modalHead: {
+    fontSize: fontSize.h3,
+    color: colors.black,
+    fontWeight: 'bold',
+  },
+  modelText: {
+    fontSize: fontSize.h6,
+    textAlign: 'center',
+    color: colors.black,
+    width: sizes.screenWidth * 0.7,
+    fontWeight: '500',
+  },
+  blueText: {
+    color: colors.appTextColor1,
+  },
+  signInBtnModal: {
+    height: sizes.screenHeight * 0.059,
+    width: sizes.screenWidth * 0.63,
+    alignSelf: 'center',
+    justifyContent: 'center',
+    marginTop: 20,
+  },
+  btnTextModal: {
+    textAlign: 'center',
+    color: '#EFEFF0',
+    fontSize: fontSize.large,
+    fontWeight: '500',
+  },
 });
