@@ -4,6 +4,7 @@ import LandingPage from './src/screens/LandingPage'
 import SignIn from './src/screens/SignIn'
 import Question2 from './src/screens/Question2'
 import SurveyCompleted from './src/screens/SurveyCompleted'
+import Home from './src/screens/Home'
 
 
 export default function App() {
@@ -12,7 +13,8 @@ export default function App() {
       {/* <LandingPage /> */}
       {/* <SignIn /> */}
       {/* <Question2/> */}
-      <SurveyCompleted/>
+      {/* <SurveyCompleted/> */}
+      <Home/>
     </SafeAreaView>
   )
 }

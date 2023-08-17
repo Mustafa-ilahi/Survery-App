@@ -9,6 +9,7 @@ import progressBar from '../../../assets/progressBar.png';
 import buttonBg2 from '../../../assets/buttonBg2.png';
 import buttonBg3 from '../../../assets/buttonBg3.png';
 import buttonBg4 from '../../../assets/buttonBg4.png';
+import homeTopBg from '../../../assets/homeTopBg.png';
 
 import buttonBg from '../../../assets/buttonBg.png';
 const images = {
@@ -24,5 +25,6 @@ const images = {
   buttonBg2,
   buttonBg3,
   buttonBg4,
+  homeTopBg
 };
 export default images;
