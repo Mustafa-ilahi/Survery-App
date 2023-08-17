@@ -108,4 +108,32 @@ export const styles = StyleSheet.create({
     height: sizes.screenHeight * 0.075,
     width: sizes.screenWidth * 0.13,
   },
+  modalView: {
+    backgroundColor: colors.white,
+    height: sizes.screenHeight * 0.4,
+    width: sizes.screenWidth * 0.8,
+    alignItems: 'center',
+    alignSelf: 'center',
+    borderRadius: sizes.screenWidth * 0.06,
+    justifyContent: 'center',
+  },
+  modalTree: {
+    height: sizes.screenHeight * 0.1,
+    width: sizes.screenWidth * 0.2,
+  },
+  modalHead: {
+    fontSize: fontSize.h3,
+    color: colors.black,
+    fontWeight: 'bold',
+  },
+  modelText: {
+    fontSize: fontSize.h5,
+    textAlign: 'center',
+    color: colors.black,
+    width: sizes.screenWidth * 0.5,
+    fontWeight: '500',
+  },
+  blueText: {
+    color: colors.appTextColor1,
+  },
 });

@@ -7,11 +7,19 @@ import {
   TouchableOpacity,
   ImageBackground,
   Image,
+  Button,
 } from 'react-native';
 import images from '../../services/utilities/images';
-import { sizes } from '../../services';
+import {colors, sizes} from '../../services';
+import Modal from 'react-native-modal';
 
 export default function GridGameResult() {
+  const [isModalVisible, setModalVisible] = useState(false);
+
+  const toggleModal = () => {
+    setModalVisible(!isModalVisible);
+  };
+
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -45,14 +53,14 @@ export default function GridGameResult() {
                 <Image source={images.coin} style={styles.stationResult} />
               </View>
             </TouchableOpacity>
-            <TouchableOpacity>
-
+            <TouchableOpacity onPress={toggleModal}>
               <ImageBackground
                 source={images.gridBg}
                 style={styles.gridItemblue}>
-              <View style={{alignSelf:'center',top:sizes.screenHeight*0.03}}>
-                <Image source={images.treeLight} style={styles.lightTree} />
-                  </View>
+                <View
+                  style={{alignSelf: 'center', top: sizes.screenHeight * 0.03}}>
+                  <Image source={images.treeLight} style={styles.lightTree} />
+                </View>
               </ImageBackground>
             </TouchableOpacity>
             <TouchableOpacity>
@@ -122,13 +130,32 @@ export default function GridGameResult() {
           </View>
         </View>
         <View style={styles.inputTop}>
-          <TouchableOpacity>
+          <TouchableOpacity >
             <ImageBackground source={images.buttonBg2} style={styles.signInBtn}>
               <Text style={styles.btnText}>Play (Cost 50 Points)</Text>
             </ImageBackground>
           </TouchableOpacity>
         </View>
       </View>
+      <Modal isVisible={isModalVisible}>
+        <View
+          style={styles.modalView}>
+          <Image
+            onPress={toggleModal}
+            source={images.modalTree}
+            style={styles.modalTree}
+          />
+          <Text onPress={toggleModal} style={styles.modalHead}>
+            Congrats!
+          </Text>
+          <Text onPress={toggleModal} style={styles.modelText}>
+            {' '}
+            You just planted a tree in{' '}
+            <Text style={styles.blueText}>America</Text>
+          </Text>
+
+        </View>
+      </Modal>
     </SafeAreaView>
   );
 }

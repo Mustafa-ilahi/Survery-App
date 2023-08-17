@@ -17,6 +17,7 @@ import coin from '../../../assets/coin.png';
 import tree from '../../../assets/tree.png';
 import emoji from '../../../assets/emoji.png';
 import treeLight from '../../../assets/treeLight.png';
+import modalTree from '../../../assets/modalTree.png';
 
 const images = {
   crossIcon,
@@ -38,6 +39,7 @@ const images = {
   coin,
   tree,
   emoji,
-  treeLight
+  treeLight,
+  modalTree
 };
 export default images;
