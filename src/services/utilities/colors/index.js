@@ -9,6 +9,7 @@ export const colors = {
   disabledText: '#84888B',
   borderColor: '#EFEFF0',
   pickerButton: '#FAFAFA',
+  grid:'#D9D9D9',
   label: '#9E9E9E',
   appColor1: '#1D3932',
   appTextColor1: '#379eea',

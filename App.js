@@ -5,14 +5,16 @@ import SignIn from './src/screens/SignIn'
 import SignUp from './src/screens/SignUp'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import OTP from './src/screens/OTP'
+import GridGame from './src/screens/GridGame'
 
 export default function App() {
   return (
     <SafeAreaProvider>
       {/* <LandingPage /> */}
       {/* <SignIn /> */}
-      <SignUp />
+      {/* <SignUp /> */}
       {/* <OTP /> */}
+      <GridGame />
     </SafeAreaProvider>
   )
 }
