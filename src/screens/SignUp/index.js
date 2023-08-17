@@ -199,7 +199,7 @@ export default function SignUp() {
             </View>
             <View style={[styles.row, styles.bottom]}>
               <Text style={styles.forgetText}>Already have an account?</Text>
-              <TouchableOpacity onPress={() => setOpen(true)}>
+              <TouchableOpacity >
                 <Text style={styles.signUpText}>Sign In!</Text>
               </TouchableOpacity>
             </View>

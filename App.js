@@ -11,8 +11,8 @@ export default function App() {
     <SafeAreaProvider>
       {/* <LandingPage /> */}
       {/* <SignIn /> */}
-      {/* <SignUp /> */}
-      <OTP />
+      <SignUp />
+      {/* <OTP /> */}
     </SafeAreaProvider>
   )
 }
