@@ -79,4 +79,19 @@ export const styles = StyleSheet.create({
   playView: {
     left: 3,
   },
+ 
+  signInBtn: {
+    height: sizes.screenHeight * 0.083,
+    width:sizes.screenWidth*0.95,
+    alignSelf:'center'
+  },
+  btnText: {
+    textAlign: 'center',
+    marginTop: sizes.screenHeight * 0.023,
+    color: '#EFEFF0',
+    fontSize: fontSize.extraLarge,
+  },
+  inputTop:{
+    marginTop:sizes.screenHeight*0.04
+  }
 });

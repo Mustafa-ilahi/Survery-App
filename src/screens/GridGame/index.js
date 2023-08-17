@@ -91,6 +91,15 @@ export default function GridGame() {
             </View>
           </View>
         </View>
+      <View style={styles.inputTop}>
+            <TouchableOpacity>
+              <ImageBackground
+                source={images.buttonBg2}
+                style={styles.signInBtn}>
+                <Text style={styles.btnText}>Play (Cost 50 Points)</Text>
+              </ImageBackground>
+            </TouchableOpacity>
+          </View>
       </View>
     </SafeAreaView>
   );
