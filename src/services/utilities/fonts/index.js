@@ -24,6 +24,7 @@ const fontSize = {
   small: totalSize(1.25),
   tiny: totalSize(1),
   extraSmall: totalSize(0.8),
+  xxsmall: totalSize(0.5),
 };
 
 export {fontFamily, fontSize};
