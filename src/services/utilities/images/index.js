@@ -12,6 +12,10 @@ import buttonBg4 from '../../../assets/buttonBg4.png';
 import homeTopBg from '../../../assets/homeTopBg.png';
 
 import buttonBg from '../../../assets/buttonBg.png';
+import gridBg from '../../../assets/gridBg.png';
+import playstation from '../../../assets/playstation.png';
+import coin from '../../../assets/coin.png';
+import tree from '../../../assets/tree.png';
 const images = {
   crossIcon,
   profile,
@@ -25,6 +29,11 @@ const images = {
   buttonBg2,
   buttonBg3,
   buttonBg4,
-  homeTopBg
+  homeTopBg,
+  buttonBg,
+  gridBg,
+  playstation,
+  coin,
+  tree,
 };
 export default images;
