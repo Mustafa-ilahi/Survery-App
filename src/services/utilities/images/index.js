@@ -7,6 +7,8 @@ import rightArrow from '../../../assets/rightArrow.png';
 import leftArrow from '../../../assets/leftArrow.png';
 import progressBar from '../../../assets/progressBar.png';
 import buttonBg2 from '../../../assets/buttonBg2.png';
+import buttonBg3 from '../../../assets/buttonBg3.png';
+import buttonBg4 from '../../../assets/buttonBg4.png';
 
 import buttonBg from '../../../assets/buttonBg.png';
 const images = {
@@ -19,6 +21,8 @@ const images = {
   leftArrow,
   progressBar,
   buttonBg,
-  buttonBg2
+  buttonBg2,
+  buttonBg3,
+  buttonBg4,
 };
 export default images;
