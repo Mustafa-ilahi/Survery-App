@@ -67,6 +67,7 @@ export const styles = StyleSheet.create({
   },
   earnMoreText: {
     fontSize: fontSize.small,
+    color:colors.white
   },
   bottomView: {
     width: sizes.screenWidth * 0.9,
