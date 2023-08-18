@@ -134,24 +134,27 @@ export default function SignUp({navigation}) {
               />
               <TouchableOpacity
                 style={{
-                  bottom: sizes.screenHeight * 0.045,
+                  top: sizes.screenHeight * 0.01,
                   alignSelf: 'flex-end',
                   right: sizes.screenWidth * 0.08,
+                  position:'absolute',
+                  height: sizes.screenHeight*0.06,
+                  width:sizes.screenWidth*0.08
                 }}
                 onPress={() => setHidePass(!hidePass)}>
                 <Feather
                   name={!hidePass ? 'eye' : 'eye-off'}
                   color={colors.disabledBg2}
                   size={20}
-                  // style={{
-                  //   bottom: sizes.screenHeight * 0.045,
-                  //   alignSelf: 'flex-end',
-                  //   right: sizes.screenWidth * 0.08,
-                  // }}
+                  style={{
+                    top: sizes.screenHeight * 0.015,
+                    // alignSelf: 'flex-end',
+                    left: sizes.screenWidth * 0.015,
+                  }}
                 />
               </TouchableOpacity>
             </View>
-            <View style={styles.reenterPass}>
+            <View style={[styles.reenterPass,{marginTop:20}]}>
               <TextInput
                 label="Re Enter Password"
                 value={confirmPassword}
@@ -166,15 +169,23 @@ export default function SignUp({navigation}) {
               />
               <TouchableOpacity
                 style={{
-                  bottom: sizes.screenHeight * 0.045,
+                  top: sizes.screenHeight * 0.01,
                   alignSelf: 'flex-end',
                   right: sizes.screenWidth * 0.08,
+                  position:'absolute',
+                  height: sizes.screenHeight*0.06,
+                  width:sizes.screenWidth*0.08,
                 }}
                 onPress={() => setHidePass1(!hidePass1)}>
                 <Feather
                   name={!hidePass1 ? 'eye' : 'eye-off'}
                   color={colors.disabledBg2}
                   size={20}
+                  style={{
+                    top: sizes.screenHeight * 0.015,
+                    // alignSelf: 'flex-end',
+                    left: sizes.screenWidth * 0.015,
+                  }}
                 />
               </TouchableOpacity>
             </View>

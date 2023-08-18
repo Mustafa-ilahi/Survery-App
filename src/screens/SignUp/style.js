@@ -94,6 +94,7 @@ export const styles = StyleSheet.create({
     paddingLeft: sizes.screenWidth * 0.05,
   },
   btnTop: {
-    bottom: sizes.screenHeight * 0.03,
+    // bottom: sizes.screenHeight * 0.05,
+    marginBottom:20
   },
 });
