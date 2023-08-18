@@ -25,12 +25,12 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   porfileView: {
-    width: sizes.screenWidth * 0.85,
+    width: sizes.screenWidth * 0.9,
     height: sizes.screenHeight * 0.12,
     position: 'absolute',
     top: sizes.screenHeight * 0.22,
     backgroundColor: colors.white,
-    borderRadius: 15,
+    borderRadius: 10,
     alignItems: 'center',
     flexDirection: 'row',
 
@@ -59,30 +59,40 @@ export const styles = StyleSheet.create({
     color: colors.black,
   },
   earnMoreButton: {
-    backgroundColor:colors.black,
+    backgroundColor: colors.black,
     paddingHorizontal: 12,
     paddingVertical: 5,
     borderRadius: 20,
-    marginLeft: sizes.screenWidth * 0.07,
+    marginLeft: sizes.screenWidth * 0.14,
   },
   earnMoreText: {
     fontSize: fontSize.small,
-    color:colors.white
+    color: colors.white,
   },
   bottomView: {
     width: sizes.screenWidth * 0.9,
-    height: sizes.screenHeight * 0.6,
+    height: sizes.screenHeight * 0.55,
     alignSelf: 'center',
     backgroundColor: colors.white,
     marginTop: sizes.screenHeight * 0.05,
     padding: 10,
+    borderRadius: 10,
+
+    shadowColor: '#305430',
+    shadowOffset: {
+      width: 0,
+      height: 3,
+    },
+    shadowOpacity: 0.18,
+    shadowRadius: 4.59,
+    elevation: 5,
   },
   pollsView: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: sizes.screenWidth * 0.01,
-    marginTop:sizes.screenHeight * 0.01
+    marginTop: sizes.screenHeight * 0.01,
   },
   innerPollView: {
     flexDirection: 'row',

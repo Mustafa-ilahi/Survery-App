@@ -32,9 +32,9 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.white,
     borderRadius: 10,
     alignItems: 'center',
-    justifyContent:"space-between",
+    justifyContent: 'space-between',
     flexDirection: 'row',
-    padding:13,
+    padding: 13,
 
     shadowColor: '#305430',
     shadowOffset: {
@@ -45,39 +45,24 @@ export const styles = StyleSheet.create({
     shadowRadius: 4.59,
     elevation: 5,
   },
-  profileImage: {
-    // width: sizes.screenWidth * 0.25,
-    // height: sizes.screenWidth * 0.2,
-    width: sizes.screenWidth * 0.17,
-    height: sizes.screenHeight * 0.08,
-    // resizeMode: 'contain',
-    borderRadius:10
-  },
+
   text1: {
     fontWeight: 'bold',
     fontSize: fontSize.large,
     color: colors.black,
-    // marginLeft:5
   },
   text2: {
     fontWeight: '500',
     fontSize: fontSize.medium,
     color: colors.black,
-    // marginLeft:5
   },
   earnMoreButton: {
-    backgroundColor: 'black',
-    // paddingHorizontal: 12,
-    // paddingVertical: 5,
+    backgroundColor: colors.black,
     borderRadius: 20,
-    // width:sizes.screenWidth * 0.2,
-
     width: sizes.screenWidth * 0.2,
-    height: sizes.screenHeight * 0.03,
-    alignItems:"center",
-    justifyContent:"center"
-    
-    // marginLeft: sizes.screenWidth * 0.07,
+    height: sizes.screenHeight * 0.035,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   earnMoreText: {
     fontSize: fontSize.small,
@@ -119,7 +104,7 @@ export const styles = StyleSheet.create({
   imageLogo: {
     width: sizes.screenWidth * 0.17,
     height: sizes.screenHeight * 0.08,
-    borderRadius: 10,
+    borderRadius: 7,
   },
   bestDealButton: {
     backgroundColor: colors.white,
@@ -139,8 +124,8 @@ export const styles = StyleSheet.create({
   amountButton: {
     backgroundColor: colors.black,
     borderRadius: 20,
-    width: sizes.screenWidth * 0.16,
-    height: sizes.screenHeight * 0.04,
+    width: sizes.screenWidth * 0.17,
+    height: sizes.screenHeight * 0.035,
     alignItems: 'center',
     justifyContent: 'center',
   },

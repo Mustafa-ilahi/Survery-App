@@ -17,30 +17,19 @@ export default function Pricing() {
         <ImageBackground source={images.homeTopBg} style={styles.topBgImage}>
           <Text style={styles.nameText}>Out of Points?</Text>
           <Text style={styles.welcomeText}>You can get more!</Text>
-          {/* <View style={styles.porfileView}>
-            <Image source={images.prisingImage1} style={styles.profileImage} />
-            <View>
-              <Text style={styles.text1}>Your Rewards</Text>
-              <Text style={styles.text2}>32,219 points</Text>
-            </View>
-            <TouchableOpacity style={styles.earnMoreButton}>
-              <Text style={styles.earnMoreText}>Earn More</Text>
-            </TouchableOpacity>
-          </View> */}
-
           <View style={styles.porfileView}>
             <View style={styles.innerPollView}>
               <Image source={images.prisingImage1} style={styles.imageLogo} />
               <View style={styles.pollsTextView}>
-                <View style={styles.bestDealButton}>
-                  <Text style={styles.bestDealText}>Best Deal</Text>
+                <View>
+                  <Text style={styles.text1}>Your Rewards</Text>
                 </View>
-                <Text style={styles.text1}>1000 Points</Text>
+                <Text style={styles.text2}>32,219 points</Text>
               </View>
             </View>
-            <View style={styles.earnMoreButton}>
+            <TouchableOpacity style={styles.earnMoreButton}>
               <Text style={styles.earnMoreText}>Earn More</Text>
-            </View>
+            </TouchableOpacity>
           </View>
         </ImageBackground>
         <View style={styles.bottomView}>

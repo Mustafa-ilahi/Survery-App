@@ -23,14 +23,14 @@ export default function App() {
       {/* <SignIn /> */}
       {/* <Question2/> */}
       {/* <SurveyCompleted/> */}
-      {/* <Home/> */}
+      <Home/>
       {/* <SignUp /> */}
       {/* <OTP /> */}
       {/* <GridGame /> */}
       {/* <GridGameResult /> */}
       {/* <GridGame6x6 /> */}
       {/* <GridGame9x9 /> */}
-      <Pricing />
+      {/* <Pricing /> */}
       {/* <Games /> */}
     </SafeAreaProvider>
   );
