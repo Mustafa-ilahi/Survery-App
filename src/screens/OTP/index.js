@@ -21,7 +21,7 @@ export default function OTP({navigation}) {
   const CELL_COUNT = 6;
   useEffect(() => {
     if (value?.length == 6) {
-      navigation.navigate('Home');
+      navigation.navigate('Tabs');
     }
   }, [value]);
 

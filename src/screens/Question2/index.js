@@ -10,7 +10,7 @@ import {
 import {styles} from './styles';
 import images from '../../services/utilities/images';
 
-export default function Question2() {
+export default function Question2({navigation}) {
   const [option1, setOption1] = useState(false);
   const [option2, setOption2] = useState(false);
   const [option3, setOption3] = useState(false);
@@ -19,7 +19,7 @@ export default function Question2() {
     <SafeAreaView>
       <View style={styles.container}>
         <View style={styles.header}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
             <Image source={images.leftArrow} style={styles.arrowImg} />
           </TouchableOpacity>
           <Text style={styles.arrowText}>
@@ -110,7 +110,7 @@ export default function Question2() {
             </TouchableOpacity>
           </View>
           <View style={styles.inputTop}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=>navigation.navigate("SurveyCompleted")}>
               <ImageBackground
                 source={images.buttonBg2}
                 style={styles.signInBtn}>

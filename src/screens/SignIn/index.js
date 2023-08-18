@@ -74,7 +74,7 @@ export default function SignIn({navigation}) {
           </TouchableOpacity>
         </View>
         <View style={styles.inputTop}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={()=>navigation.navigate('Tabs')}>
             <ImageBackground source={images.buttonBg} style={styles.signInBtn}>
               <Text style={styles.btnText}>Sign In</Text>
             </ImageBackground>

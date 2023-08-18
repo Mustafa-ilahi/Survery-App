@@ -13,7 +13,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import {colors} from '../../services';
 import images from '../../services/utilities/images';
 
-export default function Survey() {
+export default function Survey({navigation}) {
   const [grid3, setGrid3] = useState(true);
   const [grid9, setGrid9] = useState(false);
   const [grid6, setGrid6] = useState(false);
@@ -32,10 +32,10 @@ export default function Survey() {
           <View style={styles.row}>
             <ScrollView horizontal showsHorizontalScrollIndicator={false}>
               <TouchableOpacity>
-              <View style={styles.headerPadding}>
-                <Image source={images.all} style={styles.bannerIcon} />
-                <Text style={styles.text}>All</Text>
-              </View>
+                <View style={styles.headerPadding}>
+                  <Image source={images.all} style={styles.bannerIcon} />
+                  <Text style={styles.text}>All</Text>
+                </View>
               </TouchableOpacity>
               <TouchableOpacity>
                 <View style={styles.headerPadding}>
@@ -104,7 +104,8 @@ export default function Survey() {
                 </Text>
               </View>
               <View style={styles.inputTop}>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => navigation.navigate('Question2')}>
                   <ImageBackground
                     source={images.buttonBg}
                     style={styles.signInBtn}>
@@ -152,7 +153,8 @@ export default function Survey() {
                 </Text>
               </View>
               <View style={styles.inputTop}>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => navigation.navigate('Question2')}>
                   <ImageBackground
                     source={images.buttonBg}
                     style={styles.signInBtn}>
@@ -200,7 +202,8 @@ export default function Survey() {
                 </Text>
               </View>
               <View style={styles.inputTop}>
-                <TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => navigation.navigate('Question2')}>
                   <ImageBackground
                     source={images.buttonBg}
                     style={styles.signInBtn}>

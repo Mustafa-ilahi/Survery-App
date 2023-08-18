@@ -15,6 +15,12 @@ import images from '../utilities/images';
 import {Image, View, StyleSheet} from 'react-native';
 import {colors} from '../utilities/colors';
 import {sizes} from '../utilities/sizes';
+import Survey from '../../screens/Survey';
+import GridGame from '../../screens/GridGame';
+import GridGame6x6 from '../../screens/GridGame6x6';
+import GridGame9x9 from '../../screens/GridGame9x9';
+import Question2 from '../../screens/Question2';
+import SurveyCompleted from '../../screens/SurveyCompleted';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -23,13 +29,19 @@ export default function MainNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Tabs" component={MyTabs} />
-
-        {/* <Stack.Screen name="LandingPage" component={LandingPage} />
+        <Stack.Screen name="LandingPage" component={LandingPage} />
         <Stack.Screen name="SignIn" component={SignIn} />
+        <Stack.Screen name="Tabs" component={MyTabs} />
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="OTP" component={OTP} />
-        <Stack.Screen name="Home" component={Home} /> */}
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="GridGame" component={GridGame} />
+        <Stack.Screen name="GridGame6x6" component={GridGame6x6} />
+        <Stack.Screen name="GridGame9x9" component={GridGame9x9} />
+        <Stack.Screen name="Question2" component={Question2} />
+        <Stack.Screen name="SurveyCompleted" component={SurveyCompleted} />
+        <Stack.Screen name="Games" component={Games} />
+        <Stack.Screen name="Pricing" component={Pricing} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -78,8 +90,8 @@ const MyTabs = () => {
         }}
       />
       <Tab.Screen
-        name="Pricing"
-        component={Pricing}
+        name="Games"
+        component={Games}
         options={{
           tabBarIcon: ({focused}) => (
             <View>
@@ -96,8 +108,8 @@ const MyTabs = () => {
         }}
       />
       <Tab.Screen
-        name="Home3"
-        component={Home}
+        name="Survey"
+        component={Survey}
         options={{
           tabBarIcon: ({focused}) => (
             <View>
@@ -115,8 +127,8 @@ const MyTabs = () => {
         }}
       />
       <Tab.Screen
-        name="Home4"
-        component={Games}
+        name="Pricing"
+        component={Pricing}
         options={{
           tabBarIcon: ({focused}) => (
             <View>

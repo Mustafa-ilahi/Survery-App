@@ -78,7 +78,7 @@ export const styles = StyleSheet.create({
   },
 
   inputTop: {
-    marginBottom: sizes.screenHeight * 0.03,
+    marginBottom: sizes.screenHeight * 0.08,
   },
   signInBtn: {
     height: sizes.screenHeight * 0.083,

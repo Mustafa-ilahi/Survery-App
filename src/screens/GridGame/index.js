@@ -11,12 +11,18 @@ import {
 import images from '../../services/utilities/images';
 import Modal from 'react-native-modal';
 
-export default function GridGame() {
+export default function GridGame({navigation}) {
   const [isModalVisible, setModalVisible] = useState(false);
 
   const toggleModal = () => {
     setModalVisible(!isModalVisible);
   };
+
+  const handleBuyPoints = () => {
+    toggleModal();
+    navigation.navigate("Pricing")
+  };
+
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -39,7 +45,9 @@ export default function GridGame() {
             <TouchableOpacity>
               <View style={styles.gridItem}></View>
             </TouchableOpacity>
-            <TouchableOpacity onPress={toggleModal}>
+            <TouchableOpacity
+            // onPress={toggleModal}
+            >
               <ImageBackground
                 source={images.gridBg}
                 style={styles.gridItemblue}></ImageBackground>
@@ -100,7 +108,7 @@ export default function GridGame() {
           </View>
         </View>
         <View style={styles.inputTop}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={toggleModal}>
             <ImageBackground source={images.buttonBg2} style={styles.signInBtn}>
               <Text style={styles.btnText}>Play (Cost 50 Points)</Text>
             </ImageBackground>
@@ -114,11 +122,13 @@ export default function GridGame() {
             Don’t have enough points? You can buy more!
           </Text>
           <View style={styles.modalBtnTop}>
-            <TouchableOpacity onPress={toggleModal}>
+            <TouchableOpacity onPress={handleBuyPoints}>
               <ImageBackground
                 source={images.buttonBg2}
                 style={styles.signInBtnModal}>
-                <Text style={styles.btnTextModal}>Buy Points (1000 in $9.99)</Text>
+                <Text style={styles.btnTextModal}>
+                  Buy Points (1000 in $9.99)
+                </Text>
               </ImageBackground>
             </TouchableOpacity>
           </View>

@@ -35,21 +35,26 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    marginBottom: sizes.screenHeight * 0.05,
+    marginBottom: sizes.screenHeight * 0.1,
     paddingHorizontal: sizes.screenWidth * 0.02,
   },
   nextButton: {
     height: sizes.screenWidth * 0.17,
     width: sizes.screenWidth * 0.443,
+    justifyContent:'center'
   },
   nextText: {
     color: colors.appTextColor1,
     textAlign: 'center',
-    marginTop: sizes.screenHeight * 0.026,
+    fontSize:fontSize.h6,
+    fontWeight:'500'
+    // marginTop: sizes.screenHeight * 0.026,
   },
   playText: {
     color: colors.white,
     textAlign: 'center',
-    marginTop: sizes.screenHeight * 0.026,
+    fontSize:fontSize.h6
+
+    // marginTop: sizes.screenHeight * 0.026,
   },
 });

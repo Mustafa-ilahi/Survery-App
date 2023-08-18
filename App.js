@@ -34,8 +34,8 @@ export default function App() {
       {/* <GridGame9x9 /> */}
       {/* <Pricing /> */}
       {/* <Games /> */}
-      {/* <MainNavigator /> */}
-      <Survey />
+      <MainNavigator />
+      {/* <Survey /> */}
     </SafeAreaProvider>
   );
 }

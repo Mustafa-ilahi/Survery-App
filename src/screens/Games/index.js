@@ -12,7 +12,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import {colors} from '../../services';
 import images from '../../services/utilities/images';
 
-export default function Games() {
+export default function Games({navigation}) {
   const [grid3, setGrid3] = useState(true);
   const [grid9, setGrid9] = useState(false);
   const [grid6, setGrid6] = useState(false);
@@ -45,7 +45,7 @@ export default function Games() {
               </Text>
             </View>
             <View style={styles.inputTop}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=>navigation.navigate("GridGame")}>
                 <ImageBackground
                   source={images.buttonBg}
                   style={styles.signInBtn}>
@@ -74,7 +74,7 @@ export default function Games() {
               </Text>
             </View>
             <View style={styles.inputTop}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=>navigation.navigate("GridGame9x9")}>
                 <ImageBackground
                   source={images.buttonBg}
                   style={styles.signInBtn}>
@@ -103,7 +103,7 @@ export default function Games() {
               </Text>
             </View>
             <View style={styles.inputTop}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=>navigation.navigate("GridGame6x6")}>
                 <ImageBackground
                   source={images.buttonBg}
                   style={styles.signInBtn}>

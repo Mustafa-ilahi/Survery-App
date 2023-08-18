@@ -9,7 +9,7 @@ import {
 import {styles} from './style';
 import images from '../../services/utilities/images';
 
-export default function SurveyCompleted() {
+export default function SurveyCompleted({navigation}) {
   return (
     <SafeAreaView>
       <View style={styles.container}>
@@ -31,7 +31,7 @@ export default function SurveyCompleted() {
               </TouchableOpacity>
             </View>
             <View>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={()=>navigation.navigate("Games")}>
                 <ImageBackground
                   source={images.buttonBg4}
                   style={styles.nextButton}>
