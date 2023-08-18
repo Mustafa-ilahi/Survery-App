@@ -30,6 +30,11 @@ import prisingImage3 from '../../../assets/prisingImage3.png';
 import prisingImage4 from '../../../assets/prisingImage4.png';
 import prisingImage5 from '../../../assets/prisingImage5.png';
 import grid3 from '../../../assets/grid3.png';
+import bottomIcon1 from '../../../assets/bottomIcon1.png';
+import bottomIcon2 from '../../../assets/bottomIcon2.png';
+import bottomIcon4 from '../../../assets/bottomIcon4.png';
+import bottomIcon5 from '../../../assets/bottomIcon5.png';
+import bottomIcon3 from '../../../assets/bottomIcon3.png';
 
 const images = {
   crossIcon,
@@ -64,6 +69,11 @@ const images = {
   prisingImage3,
   prisingImage4,
   prisingImage5,
-  grid3
+  grid3,
+  bottomIcon1,
+  bottomIcon2,
+  bottomIcon3,
+  bottomIcon4,
+  bottomIcon5,
 };
 export default images;

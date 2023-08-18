@@ -24,7 +24,7 @@ export default function App() {
       {/* <SignIn /> */}
       {/* <Question2/> */}
       {/* <SurveyCompleted/> */}
-      <Home/>
+      {/* <Home/> */}
       {/* <SignUp /> */}
       {/* <OTP /> */}
       {/* <GridGame /> */}
