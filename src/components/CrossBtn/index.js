@@ -6,8 +6,10 @@ import images from '../../services/utilities/images';
 export default function CrossBtn() {
   return (
     <SafeAreaView>
-      <TouchableOpacity>
-        <View style={styles.crossView}> 
+      <TouchableOpacity 
+      // onPress={() => navigation.goBack()}
+      >
+        <View style={styles.crossView}>
           <Image source={images.crossIcon} style={styles.crossIcon} />
         </View>
       </TouchableOpacity>

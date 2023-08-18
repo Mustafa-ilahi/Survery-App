@@ -19,7 +19,7 @@ import Feather from 'react-native-vector-icons/Feather';
 
 import {DatePickerInput} from 'react-native-paper-dates';
 
-export default function SignUp() {
+export default function SignUp({navigation}) {
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
@@ -172,7 +172,7 @@ export default function SignUp() {
               </TouchableOpacity>
             </View>
             <View style={styles.btnTop}>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={() => navigation.navigate('OTP')}>
                 <ImageBackground
                   source={images.buttonBg}
                   style={styles.signInBtn}>
@@ -199,7 +199,7 @@ export default function SignUp() {
             </View>
             <View style={[styles.row, styles.bottom]}>
               <Text style={styles.forgetText}>Already have an account?</Text>
-              <TouchableOpacity >
+              <TouchableOpacity onPress={() => navigation.navigate('SignIn')}>
                 <Text style={styles.signUpText}>Sign In!</Text>
               </TouchableOpacity>
             </View>

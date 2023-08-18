@@ -14,7 +14,7 @@ import {TextInput} from 'react-native-paper';
 import {colors, sizes} from '../../services';
 import Feather from 'react-native-vector-icons/Feather';
 
-export default function SignIn() {
+export default function SignIn({navigation}) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [hidePass, setHidePass] = useState(true);
@@ -89,7 +89,7 @@ export default function SignIn() {
         </View>
         <View style={[styles.row, styles.bottom]}>
           <Text style={styles.forgetText}>Don’t have an account?</Text>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={()=>navigation.navigate('SignUp')}>
             <Text style={styles.signUpText}>Sign Up Today!</Text>
           </TouchableOpacity>
         </View>
