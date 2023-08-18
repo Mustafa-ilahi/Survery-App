@@ -46,7 +46,7 @@ export default function GridGame({navigation}) {
               <View style={styles.gridItem}></View>
             </TouchableOpacity>
             <TouchableOpacity
-            // onPress={toggleModal}
+            onPress={()=>navigation.navigate("GridGameResult")}
             >
               <ImageBackground
                 source={images.gridBg}

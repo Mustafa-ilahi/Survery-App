@@ -21,6 +21,7 @@ import GridGame6x6 from '../../screens/GridGame6x6';
 import GridGame9x9 from '../../screens/GridGame9x9';
 import Question2 from '../../screens/Question2';
 import SurveyCompleted from '../../screens/SurveyCompleted';
+import GridGameResult from '../../screens/GridGameResult';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -42,6 +43,7 @@ export default function MainNavigator() {
         <Stack.Screen name="SurveyCompleted" component={SurveyCompleted} />
         <Stack.Screen name="Games" component={Games} />
         <Stack.Screen name="Pricing" component={Pricing} />
+        <Stack.Screen name="GridGameResult" component={GridGameResult} />
       </Stack.Navigator>
     </NavigationContainer>
   );
