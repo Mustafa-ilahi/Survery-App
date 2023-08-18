@@ -19,7 +19,7 @@ export default function Survey() {
   const [grid6, setGrid6] = useState(false);
   return (
     <SafeAreaView>
-      <ScrollView>
+      <ScrollView style={styles.container}>
         <View style={styles.container}>
           <View style={styles.padding}>
             <View style={[styles.row, styles.spaceBetween]}>
