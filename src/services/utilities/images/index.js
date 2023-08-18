@@ -24,6 +24,11 @@ import homePolls5 from '../../../assets/homePolls5.png';
 import emoji from '../../../assets/emoji.png';
 import treeLight from '../../../assets/treeLight.png';
 import modalTree from '../../../assets/modalTree.png';
+import prisingImage1 from '../../../assets/prisingImage1.png';
+import prisingImage2 from '../../../assets/prisingImage2.png';
+import prisingImage3 from '../../../assets/prisingImage3.png';
+import prisingImage4 from '../../../assets/prisingImage4.png';
+import prisingImage5 from '../../../assets/prisingImage5.png';
 
 const images = {
   crossIcon,
@@ -52,6 +57,11 @@ const images = {
   homePolls5,
   emoji,
   treeLight,
-  modalTree
+  modalTree,
+  prisingImage1,
+  prisingImage2,
+  prisingImage3,
+  prisingImage4,
+  prisingImage5,
 };
 export default images;

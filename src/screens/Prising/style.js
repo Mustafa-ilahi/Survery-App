@@ -25,14 +25,16 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   porfileView: {
-    width: sizes.screenWidth * 0.85,
+    width: sizes.screenWidth * 0.9,
     height: sizes.screenHeight * 0.12,
     position: 'absolute',
     top: sizes.screenHeight * 0.22,
     backgroundColor: colors.white,
-    borderRadius: 15,
+    borderRadius: 10,
     alignItems: 'center',
+    justifyContent:"space-between",
     flexDirection: 'row',
+    padding:13,
 
     shadowColor: '#305430',
     shadowOffset: {
@@ -44,45 +46,67 @@ export const styles = StyleSheet.create({
     elevation: 5,
   },
   profileImage: {
-    width: sizes.screenWidth * 0.25,
-    height: sizes.screenWidth * 0.2,
-    resizeMode: 'contain',
+    // width: sizes.screenWidth * 0.25,
+    // height: sizes.screenWidth * 0.2,
+    width: sizes.screenWidth * 0.17,
+    height: sizes.screenHeight * 0.08,
+    // resizeMode: 'contain',
+    borderRadius:10
   },
   text1: {
     fontWeight: 'bold',
     fontSize: fontSize.large,
     color: colors.black,
+    // marginLeft:5
   },
   text2: {
     fontWeight: '500',
     fontSize: fontSize.medium,
     color: colors.black,
+    // marginLeft:5
   },
   earnMoreButton: {
-    backgroundColor:colors.black,
-    paddingHorizontal: 12,
-    paddingVertical: 5,
+    backgroundColor: 'black',
+    // paddingHorizontal: 12,
+    // paddingVertical: 5,
     borderRadius: 20,
-    marginLeft: sizes.screenWidth * 0.07,
+    // width:sizes.screenWidth * 0.2,
+
+    width: sizes.screenWidth * 0.2,
+    height: sizes.screenHeight * 0.03,
+    alignItems:"center",
+    justifyContent:"center"
+    
+    // marginLeft: sizes.screenWidth * 0.07,
   },
   earnMoreText: {
     fontSize: fontSize.small,
-    color:colors.white
+    color: colors.white,
   },
   bottomView: {
     width: sizes.screenWidth * 0.9,
-    height: sizes.screenHeight * 0.6,
+    height: sizes.screenHeight * 0.45,
     alignSelf: 'center',
     backgroundColor: colors.white,
     marginTop: sizes.screenHeight * 0.05,
     padding: 10,
+    borderRadius: 10,
+
+    shadowColor: '#000000',
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.15,
+    shadowRadius: 1.0,
+    elevation: 1,
   },
   pollsView: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: sizes.screenWidth * 0.01,
-    marginTop:sizes.screenHeight * 0.01
+    marginTop: sizes.screenHeight * 0.01,
   },
   innerPollView: {
     flexDirection: 'row',
@@ -96,5 +120,32 @@ export const styles = StyleSheet.create({
     width: sizes.screenWidth * 0.17,
     height: sizes.screenHeight * 0.08,
     borderRadius: 10,
+  },
+  bestDealButton: {
+    backgroundColor: colors.white,
+    borderRadius: 20,
+    width: sizes.screenWidth * 0.16,
+    height: sizes.screenHeight * 0.03,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderColor: colors.disabledBg2,
+    borderStyle: 'solid',
+    borderWidth: 1,
+  },
+  bestDealText: {
+    fontSize: fontSize.small,
+    color: colors.disabledBg2,
+  },
+  amountButton: {
+    backgroundColor: colors.black,
+    borderRadius: 20,
+    width: sizes.screenWidth * 0.16,
+    height: sizes.screenHeight * 0.04,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  amountButtonText: {
+    fontSize: fontSize.smallM,
+    color: colors.white,
   },
 });

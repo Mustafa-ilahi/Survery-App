@@ -13,6 +13,7 @@ import GridGame from './src/screens/GridGame';
 import GridGameResult from './src/screens/GridGameResult';
 import GridGame6x6 from './src/screens/GridGame6x6';
 import GridGame9x9 from './src/screens/GridGame9x9';
+import Prising from './src/screens/Prising';
 
 export default function App() {
   return (
@@ -21,13 +22,14 @@ export default function App() {
       {/* <SignIn /> */}
       {/* <Question2/> */}
       {/* <SurveyCompleted/> */}
-      <Home/>
+      {/* <Home/> */}
       {/* <SignUp /> */}
       {/* <OTP /> */}
       {/* <GridGame /> */}
       {/* <GridGameResult /> */}
       {/* <GridGame6x6 /> */}
       {/* <GridGame9x9 /> */}
+      <Prising/>
     </SafeAreaProvider>
   );
 }
