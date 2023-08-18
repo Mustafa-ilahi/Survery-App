@@ -10,7 +10,7 @@ import {
 import {styles} from './style';
 import images from '../../services/utilities/images';
 
-export default function Prising() {
+export default function Pricing() {
   return (
     <SafeAreaView>
       <View style={styles.container}>
