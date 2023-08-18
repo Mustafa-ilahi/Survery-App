@@ -32,6 +32,8 @@ import prisingImage5 from '../../../assets/prisingImage5.png';
 import grid3 from '../../../assets/grid3.png';
 import grid9 from '../../../assets/grid9.png';
 import grid6 from '../../../assets/grid6.png';
+import list from '../../../assets/list.png';
+import all from '../../../assets/all.png';
 
 const images = {
   crossIcon,
@@ -69,5 +71,7 @@ const images = {
   grid3,
   grid9,
   grid6,
+  list,
+  all
 };
 export default images;
