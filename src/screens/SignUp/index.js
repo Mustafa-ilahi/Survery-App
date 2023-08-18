@@ -132,16 +132,22 @@ export default function SignUp({navigation}) {
                 secureTextEntry={hidePass ? true : false}
                 contentStyle={{color: colors.black}}
               />
-              <TouchableOpacity onPress={() => setHidePass(!hidePass)}>
+              <TouchableOpacity
+                style={{
+                  bottom: sizes.screenHeight * 0.045,
+                  alignSelf: 'flex-end',
+                  right: sizes.screenWidth * 0.08,
+                }}
+                onPress={() => setHidePass(!hidePass)}>
                 <Feather
                   name={!hidePass ? 'eye' : 'eye-off'}
                   color={colors.disabledBg2}
                   size={20}
-                  style={{
-                    bottom: sizes.screenHeight * 0.045,
-                    alignSelf: 'flex-end',
-                    right: sizes.screenWidth * 0.08,
-                  }}
+                  // style={{
+                  //   bottom: sizes.screenHeight * 0.045,
+                  //   alignSelf: 'flex-end',
+                  //   right: sizes.screenWidth * 0.08,
+                  // }}
                 />
               </TouchableOpacity>
             </View>
@@ -158,16 +164,17 @@ export default function SignUp({navigation}) {
                 secureTextEntry={hidePass1 ? true : false}
                 contentStyle={{color: colors.black}}
               />
-              <TouchableOpacity onPress={() => setHidePass1(!hidePass1)}>
+              <TouchableOpacity
+                style={{
+                  bottom: sizes.screenHeight * 0.045,
+                  alignSelf: 'flex-end',
+                  right: sizes.screenWidth * 0.08,
+                }}
+                onPress={() => setHidePass1(!hidePass1)}>
                 <Feather
                   name={!hidePass1 ? 'eye' : 'eye-off'}
                   color={colors.disabledBg2}
                   size={20}
-                  style={{
-                    bottom: sizes.screenHeight * 0.045,
-                    alignSelf: 'flex-end',
-                    right: sizes.screenWidth * 0.08,
-                  }}
                 />
               </TouchableOpacity>
             </View>

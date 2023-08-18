@@ -60,21 +60,27 @@ export default function SignIn({navigation}) {
             secureTextEntry={hidePass ? true : false}
             contentStyle={{color: colors.black}}
           />
-          <TouchableOpacity onPress={() => setHidePass(!hidePass)}>
+          <TouchableOpacity
+            style={{
+              bottom: sizes.screenHeight * 0.045,
+              alignSelf: 'flex-end',
+              right: sizes.screenWidth * 0.09,
+            }}
+            onPress={() => setHidePass(!hidePass)}>
             <Feather
               name={!hidePass ? 'eye' : 'eye-off'}
               color={colors.disabledBg2}
               size={20}
               style={{
-                bottom: sizes.screenHeight * 0.045,
+                // bottom: sizes.screenHeight * 0.045,
                 alignSelf: 'flex-end',
-                right: sizes.screenWidth * 0.08,
+                // right: sizes.screenWidth * 0.08,
               }}
             />
           </TouchableOpacity>
         </View>
         <View style={styles.inputTop}>
-          <TouchableOpacity onPress={()=>navigation.navigate('Tabs')}>
+          <TouchableOpacity onPress={() => navigation.navigate('Tabs')}>
             <ImageBackground source={images.buttonBg} style={styles.signInBtn}>
               <Text style={styles.btnText}>Sign In</Text>
             </ImageBackground>
@@ -89,7 +95,7 @@ export default function SignIn({navigation}) {
         </View>
         <View style={[styles.row, styles.bottom]}>
           <Text style={styles.forgetText}>Don’t have an account?</Text>
-          <TouchableOpacity onPress={()=>navigation.navigate('SignUp')}>
+          <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
             <Text style={styles.signUpText}>Sign Up Today!</Text>
           </TouchableOpacity>
         </View>
