@@ -213,6 +213,7 @@ export default function Survey() {
             </View>
           </TouchableOpacity>
         </View>
+        <View style={styles.paddingBottom}></View>
       </ScrollView>
     </SafeAreaView>
   );

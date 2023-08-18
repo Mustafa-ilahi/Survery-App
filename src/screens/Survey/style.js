@@ -5,7 +5,6 @@ export const styles = StyleSheet.create({
   container: {
     height: sizes.screenHeight,
     backgroundColor: colors.white,
-    marginBottom: sizes.screenHeight * 0.3,
   },
 
   padding: {
@@ -127,4 +126,7 @@ export const styles = StyleSheet.create({
   headerPadding: {
     marginRight: sizes.screenWidth * 0.02,
   },
+  paddingBottom:{
+    marginBottom:sizes.screenHeight*0.3
+  }
 });
