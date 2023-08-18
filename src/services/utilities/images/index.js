@@ -35,6 +35,10 @@ import bottomIcon2 from '../../../assets/bottomIcon2.png';
 import bottomIcon4 from '../../../assets/bottomIcon4.png';
 import bottomIcon5 from '../../../assets/bottomIcon5.png';
 import bottomIcon3 from '../../../assets/bottomIcon3.png';
+import grid9 from '../../../assets/grid9.png';
+import grid6 from '../../../assets/grid6.png';
+import list from '../../../assets/list.png';
+import all from '../../../assets/all.png';
 
 const images = {
   crossIcon,
@@ -75,5 +79,9 @@ const images = {
   bottomIcon3,
   bottomIcon4,
   bottomIcon5,
+  grid9,
+  grid6,
+  list,
+  all
 };
 export default images;

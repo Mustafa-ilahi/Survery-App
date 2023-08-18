@@ -64,7 +64,7 @@ export default function Games() {
           }}>
           <View style={[styles.card, grid9 && styles.border]}>
             <View style={styles.row}>
-              <Image source={images.grid3} style={styles.cardImg} />
+              <Image source={images.grid9} style={styles.cardImg} />
               <Text style={[styles.subhead]}>9x9 Grid Game</Text>
             </View>
             <View style={styles.content}>
@@ -93,7 +93,7 @@ export default function Games() {
           }}>
           <View style={[styles.card, grid6 && styles.border]}>
             <View style={styles.row}>
-              <Image source={images.grid3} style={styles.cardImg} />
+              <Image source={images.grid6} style={styles.cardImg} />
               <Text style={[styles.subhead]}>6x6 Grid Game</Text>
             </View>
             <View style={styles.content}>
