@@ -12,7 +12,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import {colors} from '../../services';
 import images from '../../services/utilities/images';
 
-export default function Games() {
+export default function Survey() {
   const [grid3, setGrid3] = useState(true);
   const [grid9, setGrid9] = useState(false);
   const [grid6, setGrid6] = useState(false);
@@ -21,7 +21,7 @@ export default function Games() {
       <View style={styles.container}>
         <View style={styles.padding}>
           <View style={[styles.row, styles.spaceBetween]}>
-            <Text style={styles.heading}>Games</Text>
+            <Text style={styles.heading}>Surveys</Text>
             <TouchableOpacity>
               <Feather name={'search'} color={colors.black} size={25} />
             </TouchableOpacity>
@@ -64,7 +64,7 @@ export default function Games() {
           }}>
           <View style={[styles.card, grid9 && styles.border]}>
             <View style={styles.row}>
-              <Image source={images.grid9} style={styles.cardImg} />
+              <Image source={images.grid3} style={styles.cardImg} />
               <Text style={[styles.subhead]}>9x9 Grid Game</Text>
             </View>
             <View style={styles.content}>
@@ -93,7 +93,7 @@ export default function Games() {
           }}>
           <View style={[styles.card, grid6 && styles.border]}>
             <View style={styles.row}>
-              <Image source={images.grid6} style={styles.cardImg} />
+              <Image source={images.grid3} style={styles.cardImg} />
               <Text style={[styles.subhead]}>6x6 Grid Game</Text>
             </View>
             <View style={styles.content}>
