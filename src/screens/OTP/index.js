@@ -1,24 +1,29 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import {styles} from './style';
-import {SafeAreaView, View, Text, TouchableOpacity} from 'react-native';
+import {SafeAreaView, View, Text, TouchableOpacity, Alert} from 'react-native';
 import CrossBtn from '../../components/CrossBtn';
 
 import {
-    CodeField,
-    Cursor,
-    useBlurOnFulfill,
-    useClearByFocusCell,
-  } from 'react-native-confirmation-code-field';
-  
-export default function OTP() {
-    const [value, setValue] = useState('');
+  CodeField,
+  Cursor,
+  useBlurOnFulfill,
+  useClearByFocusCell,
+} from 'react-native-confirmation-code-field';
 
-    const ref = useBlurOnFulfill({value, cellCount: CELL_COUNT});
-    const [props, getCellOnLayoutHandler] = useClearByFocusCell({
-      value,
-      setValue,
-    });
-    const CELL_COUNT = 6;
+export default function OTP({navigation}) {
+  const [value, setValue] = useState('');
+
+  const ref = useBlurOnFulfill({value, cellCount: CELL_COUNT});
+  const [props, getCellOnLayoutHandler] = useClearByFocusCell({
+    value,
+    setValue,
+  });
+  const CELL_COUNT = 6;
+  useEffect(() => {
+    if (value?.length == 6) {
+      navigation.navigate('Home');
+    }
+  }, [value]);
 
   return (
     <SafeAreaView>

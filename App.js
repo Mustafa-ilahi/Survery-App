@@ -15,6 +15,7 @@ import GridGame6x6 from './src/screens/GridGame6x6';
 import GridGame9x9 from './src/screens/GridGame9x9';
 import Pricing from './src/screens/Pricing';
 import Games from './src/screens/Games';
+import MainNavigator from './src/services/config/navigation';
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
       {/* <GridGame9x9 /> */}
       {/* <Pricing /> */}
       {/* <Games /> */}
+      <MainNavigator />
     </SafeAreaProvider>
   );
 }
