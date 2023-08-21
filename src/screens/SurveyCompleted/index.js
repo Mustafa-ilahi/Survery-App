@@ -31,7 +31,7 @@ export default function SurveyCompleted({navigation}) {
               </TouchableOpacity>
             </View>
             <View>
-              <TouchableOpacity onPress={()=>navigation.navigate("GridGame")}>
+              <TouchableOpacity onPress={()=>navigation.navigate("Games")}>
                 <ImageBackground
                   source={images.buttonBg4}
                   style={styles.nextButton}>

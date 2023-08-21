@@ -41,8 +41,8 @@ export default function MainNavigator() {
         <Stack.Screen name="GridGame9x9" component={GridGame9x9} />
         <Stack.Screen name="Question2" component={Question2} />
         <Stack.Screen name="SurveyCompleted" component={SurveyCompleted} />
-        <Stack.Screen name="Games" component={Games} />
-        <Stack.Screen name="Pricing" component={Pricing} />
+        {/* <Stack.Screen name="Games" component={Games} /> */}
+        {/* <Stack.Screen name="Pricing" component={Pricing} /> */}
         <Stack.Screen name="GridGameResult" component={GridGameResult} />
       </Stack.Navigator>
     </NavigationContainer>
